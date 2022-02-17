@@ -12,7 +12,7 @@
         <div class="contentContainer">
             <h2>Thank you for your purchase</h2>
             <p>To explore more book, go to our <a href="${pageContext.request.contextPath}/HomePage.jsp">catalogue</a></p>
-            <p>Total: <%= total %></p>
+            <p>Total: <%= total %>€</p>
         </div>
         
         

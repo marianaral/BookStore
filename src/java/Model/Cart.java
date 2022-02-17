@@ -26,7 +26,8 @@ public class Cart {
             Book book = Catalogue.getInstance().find(isbn);
             total += book.getPrice() * cartList.get(isbn);
         }
-        return total;
+        total += total*0.07; //Adding IGIC
+        return (double)Math.round(total * 100d) / 100d;
     }
     
     public void icreaseQuantity(String isbn) {
