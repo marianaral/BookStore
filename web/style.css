@@ -1,0 +1,100 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(42, 157, 143);
+
+}
+h1 {
+    font-family: Poppins, Arial;
+    color: white;
+        
+}
+
+#companyName a {
+    text-decoration: none;
+
+}
+
+body{
+    margin: 0;
+    font-family: Poppins, Arial;
+
+}
+.icon {
+    width:3em;
+    height:3em;
+    color: white;
+    filter: brightness(0) invert(1);
+}
+
+
+.bookContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: space-around;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+
+.book {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 15px;
+    width: 20em;
+    height: 10em;
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+
+}
+
+
+.submitButton {
+    background: rgb(233, 196, 106);
+    border: 1px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+
+.modifyQuantity {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.bottomBookContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.iconContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
