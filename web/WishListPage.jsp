@@ -4,14 +4,10 @@
 <%@page import="Model.Cart"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <jsp:scriptlet>
-    if(session.getAttribute("shoppingCart") == null){ 
-               session.setAttribute("shoppingCart", new Cart());
-   }
    if(session.getAttribute("wishList") == null){ 
                session.setAttribute("wishList", new Wishlist());
    }
 </jsp:scriptlet>
-<% Cart cart = (Cart) session.getAttribute("shoppingCart");%>
 <% Wishlist wishList = (Wishlist) session.getAttribute("wishList");%>
 <!DOCTYPE html>
 <html>
