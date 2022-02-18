@@ -25,7 +25,6 @@ public class BookLoader {
             Double price = Math.random() * 30;     
             books.add(new Book(title, isbn, price));        
         }  
-        System.out.println("Aqui");
         return books;
     }
     
