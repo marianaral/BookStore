@@ -1,11 +1,12 @@
-package Control;
+package Control.Command;
 
+import Control.Command.FrontCommand;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
 
-class UnknownCommand extends FrontCommand{
+public class UnknownCommand extends FrontCommand{
 
     @Override
     public void process() {

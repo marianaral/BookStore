@@ -1,5 +1,7 @@
 package Control;
 
+import Control.Command.UnknownCommand;
+import Control.Command.FrontCommand;
 import Model.Cart;
 import Model.Wishlist;
 import java.io.IOException;
@@ -26,7 +28,7 @@ public class FrontServlet extends HttpServlet {
     
     private Class getCommandClass(HttpServletRequest req){
         Class result;
-        final String command = "Control."+ (String) req.getParameter("command");
+        final String command = "Control.Command."+ (String) req.getParameter("command");
         try {
             result = Class.forName(command);
         } catch (ClassNotFoundException e) {

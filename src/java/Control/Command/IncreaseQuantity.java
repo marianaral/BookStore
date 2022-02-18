@@ -1,5 +1,6 @@
-package Control;
+package Control.Command;
 
+import Control.Command.FrontCommand;
 import Model.Book;
 import Model.Cart;
 import Model.Catalogue;

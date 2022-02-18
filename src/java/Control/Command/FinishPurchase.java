@@ -1,4 +1,4 @@
-package Control;
+package Control.Command;
 
 import Model.Book;
 import Model.Cart;
@@ -10,19 +10,15 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-public class DeleteFromCart extends FrontCommand {
+public class FinishPurchase extends FrontCommand {
         
     @Override
     public void process() throws ServletException, IOException {
         HttpSession session = request.getSession();
         Cart cart = (Cart) session.getAttribute("shoppingCart");
-        
-        Catalogue catalogue = Catalogue.getInstance();
-        String isbn = request.getParameter("productIsbn");
-        if (catalogue.find(isbn) != null){
-            cart.deleteItemFromCart(isbn);
-        }  
-        forward("/CartPage.jsp");
+        request.setAttribute("total", cart.finishPurchase());
+        cart.emptyCart();
+        forward("/finishPurchasePage.jsp");
         
     }
 }

@@ -1,4 +1,4 @@
-package Control;
+package Control.Command;
 
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
@@ -7,7 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-abstract class FrontCommand {
+public abstract class FrontCommand {
     protected ServletContext context;
     protected HttpServletRequest request;
     protected HttpServletResponse response;
